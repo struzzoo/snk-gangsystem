@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gang System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+
+
+function seeHomePage() {
+
+document.body.innerHTML = ''; // DON'T TOUCH
+
+setTimeout(function() {
+const container = document.createElement('div');
+container.className = '';
+container.innerHTML = `
+    <div class="container">
+        <h1 class="title">YOUR FAMILY</h1>
+        <nav class="navbar">
+            <p class="nav" onclick="seeHomePage()">Informations</p>
+            <p class="nav" onclick="seeAllMembers()">Members</p>
+            <p class="nav" onclick="seeMissions()">Missions</p> 
+            <p class="nav" onclick="gotoDiscord">Discord</p> 
+            <div class="boxmembers">
+                <h3 class="titlepl">ONLINE MEMBERS <h3 class="total">1/10</h3></h3>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+            </div> 
+            <div class="bankaccount">
+                <h1 class="titlebank">BANK ACCOUNT</h1>
+                    <p class="descript">here it is the moneys of your family:</p>
+                        <h2 class="totalm">120.000$</h2>
+                <button class="withdraw">WITHDRAW</button>
+                <button class="deposit">DEPOSIT</button>
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__logo">MasterCard</div>
+                        <div class="card__chip">
+                            <div class="card__chip-texture"></div>
+                        </div>
+                          <div class="card__number">
+                            <span class="card__digit-group">0000 0000 0000 0000</span>
+                        </div>
+                          <div class="card__exp-date"><time datetime="2038-01">02/08</time></div>
+                          <div class="card__name" aria-label="Dee Stroyer">Family Name</div>
+                          <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+                          <span id="card-vendor" class="card__vendor-sr">Mastercard</span>
+                            </div>
+                        <div class="card__texture"></div>
+                    </div>
+                </div>
+                <div class="boss">
+                    <h2 class="bosstitle">FAMILY BOSS:</h2>
+                    <img class="image" src="https://cdn.discordapp.com/attachments/1160501922814513282/1282758142572367933/IMG_1935.jpg?ex=66e0851d&is=66df339d&hm=fcd26ca82f89e34ff805fc9e7b2194561368d55c9c8bbef60bbe1d1d81906f92&">
+                    <h1 class="bossname">struuzzo</h1>
+                    </img>
+                </div>
+                <div class="idk">
+                    <h3 class="base">OUR HOME BASE</h3>
+                    <button class="openmap">OPEN MAP</button>
+                    <p class="descriptionh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+`
+document.body.appendChild(container);
+}, 20);  
+}
+
+function seeAllMembers() {
+
+    document.body.innerHTML = ''; // DON'T TOUCH
+
+    setTimeout(function() {
+    const container = document.createElement('div');
+    container.className = '';
+    container.innerHTML = `
+        <div class="containerr">
+            <h1 class="titleg">FAMILY MEMBERS</h1>
+            <p class="underg">All the members of our family are listed here, I recommend you be like brothers and don't hate each other.</p>
+            <div class="ong">
+                <h1 class="totg">MEMBERS</h1>
+                <h1 class="numberm">35</h1>
+                <h1 class="onlg">ONLINE MEMBERS</h1>
+                <h1 class="numberon">6/35</h1>
+                <input type="text" name="text" id="input" placeholder="Search members">
+                <button class="search-button">🔍</button>
+            </div>
+            <div class="membersfam">
+                 <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+                 <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+                <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+                <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+                <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+                <div class="playerg">
+                    <h2 class="nameing">NAME</h2>
+                    <p class="gamename">Player Name</p>
+                    <h2 class="gradeing">GRADE</h2>
+                    <p class="gradename">Player Grade</p>
+                    <h2 class="playtimeing">TIME</h2>
+                    <p class="timename">34h:26m:34s</p>
+                    <h2 class="paycash">SALARY</h2>
+                    <p class="paytot">2500</p>
+                </div>
+            </div>
+            <button class="backxx" onclick="seeHomePage()">⬅️</button>
+        </div>
+
+    `
+    document.body.appendChild(container);
+    }, 20);  
+}
+
+function gotoDiscord() { 
+            window.location.assign( 
+                "https://discord.gg/r2zgnnC8Tq"); 
+} 
+
+function seeMissions() {
+  let maxMissions = 6; // MAX NUMBER OF MISSIONS 
+  let currentMissions = 0;
+
+  document.body.innerHTML = ''; // DON'T TOUCH
+
+  setTimeout(function () {
+    const container = document.createElement('div');
+    container.className = '';
+    container.innerHTML = `
+    <div class="containerrr">
+        <h1 class="titlem">MISSIONS</h1>
+            <p class="underm">All the mission of our family are listed here, remember, head held high, and don't be afraid of anyone.</p>
+        <div class="main">
+    </div>
+    <button id="addMission">Add Mission</button>
+    <button id="deleteAll">Delete All Missions</button>
+    <hr>
+    <button class="backxx" onclick="seeHomePage()">⬅️</button>
+    `;
+    document.body.appendChild(container);
+
+    function createMissionBox(description) {
+      if (currentMissions >= maxMissions) {
+        alert("Non è possibile aggiungere altre missioni!");
+        return; // DON'T TOUCH
+      }
+
+      const newMissionBox = document.createElement('div');
+      newMissionBox.className = 'missionbox';
+
+      const newTitle = document.createElement('h2');
+      newTitle.className = 'titlemiss';
+      newTitle.textContent = 'MISSIONE';
+
+      const newDescriptionTitle = document.createElement('h3');
+      newDescriptionTitle.className = 'description-title';
+      newDescriptionTitle.textContent = 'Description';
+
+      const newTextarea = document.createElement('textarea');
+      newTextarea.value = description;
+      newTextarea.className = 'descriptionTextarea';
+
+      const deleteButton = document.createElement('button');
+      deleteButton.className = 'deleteMission';
+      deleteButton.textContent = 'Delete';
+      deleteButton.addEventListener('click', function () {
+        newMissionBox.remove();
+        currentMissions--;
+        saveMissions();
+      });
+
+      newMissionBox.appendChild(newTitle);
+      newMissionBox.appendChild(newDescriptionTitle);
+      newMissionBox.appendChild(newTextarea);
+      newMissionBox.appendChild(deleteButton); // Add the delete button
+
+      document.querySelector('.main').appendChild(newMissionBox);
+      currentMissions++; // DONT' TOUCH
+    }
+
+    function saveMissions() {
+      const missionDescriptions = Array.from(document.querySelectorAll('.descriptionTextarea')).map(textarea => textarea.value);
+      localStorage.setItem('missions', JSON.stringify(missionDescriptions));
+    }
+
+    function loadMissions() {
+      const savedMissions = JSON.parse(localStorage.getItem('missions')) || [];
+      savedMissions.forEach(description => createMissionBox(description));
+    }
+
+    document.getElementById('addMission').addEventListener('click', function () {
+      createMissionBox('');
+      saveMissions();
+    });
+
+    document.getElementById('deleteAll').addEventListener('click', function () {
+      document.querySelector('.main').innerHTML = ''; // Remove all mission boxes
+      currentMissions = 0; // Reset the counter
+      saveMissions(); // Update localStorage
+    });
+
+    document.addEventListener('input', function (event) {
+      if (event.target.classList.contains('descriptionTextarea')) {
+        saveMissions();
+      }
+    });
+
+    loadMissions();
+  }, 20);
+}
+
+
+</script>
+
+    <div class="container">
+        <h1 class="title">YOUR FAMILY</h1>
+        <nav class="navbar">
+            <p class="nav" onclick="seeHomePage()">Informations</p>
+            <p class="nav" onclick="seeAllMembers()">Members</p>
+            <p class="nav" onclick="seeMissions()">Missions</p> 
+            <p class="nav" onclick="gotoDiscord()">Discord</p> 
+            <div class="boxmembers">
+                <h3 class="titlepl">ONLINE MEMBERS <h3 class="total">1/10</h3></h3>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+                    <div class="member">
+                        <h4 class="playername">struzzo</h4>
+                        <p class="joined">In the family since 1/08/24</p>
+                    </div>
+            </div> 
+            <div class="bankaccount">
+                <h1 class="titlebank">BANK ACCOUNT</h1>
+                    <p class="descript">here it is the moneys of your family:</p>
+                        <h2 class="totalm">120.000$</h2>
+                <button class="withdraw">WITHDRAW</button>
+                <button class="deposit">DEPOSIT</button>
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__logo">MasterCard</div>
+                        <div class="card__chip">
+                            <div class="card__chip-texture"></div>
+                        </div>
+                          <div class="card__number">
+                            <span class="card__digit-group">0000 0000 0000 0000</span>
+                        </div>
+                          <div class="card__exp-date"><time datetime="2038-01">02/08</time></div>
+                          <div class="card__name" aria-label="Dee Stroyer">Family Name</div>
+                          <div class="card__vendor" role="img" aria-labelledby="card-vendor">
+                          <span id="card-vendor" class="card__vendor-sr">Mastercard</span>
+                            </div>
+                        <div class="card__texture"></div>
+                    </div>
+                </div>
+                <div class="boss">
+                    <h2 class="bosstitle">FAMILY BOSS:</h2>
+                    <img class="image" src="https://cdn.discordapp.com/attachments/1160501922814513282/1282758142572367933/IMG_1935.jpg?ex=66e0851d&is=66df339d&hm=fcd26ca82f89e34ff805fc9e7b2194561368d55c9c8bbef60bbe1d1d81906f92&">
+                    <h1 class="bossname">struuzzo</h1>
+                    </img>
+                </div>
+                <div class="idk">
+                    <h3 class="base">OUR HOME BASE</h3>
+                    <button class="openmap">OPEN MAP</button>
+                    <p class="descriptionh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
